@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tree and Plot</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Decision Tree Visualization</h1>
+    <div id="tree"></div>
+  <div class="plots-container">
+    <div id="plot">
+      <h2>Predicted versus Actual Values</h2>
+    </div>
+    <div id="rmse"></div>
+    <div id="threshold-section">
+      <h2>Adjust Threshold for Active Node</h2>
+      <div id="active-node-section"></div>
+      <h3>Plot of RMSE versus Node Threshold Values</h3>
+      <div id="rmse-plot"></div>
+    </div>
+  </div>
+  </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

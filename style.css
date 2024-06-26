@@ -1,0 +1,81 @@
+.container {
+  position: relative; /* Ensure container is the positioning context */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90%; /* Adjust height as needed */
+  width: 100%;
+}
+
+.plots-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 50%;
+  background-color: #f0f0f0; /* Example background color */
+}
+
+#threshold-section {
+  position: relative;
+  left: 0;
+  width: 45%; /* Half of the page width */
+  height: 45%; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Example background color */
+  border: 1px solid #ccc;
+}
+
+#plot {
+  position: relative;
+  right: 0;
+  width: 45%; /* Half of the page width */
+  height: 45%; /* Adjust height as needed */
+  min-height: 40%;
+  background-color: #f0f0f0; /* Example background color */
+  border: 1px solid #ccc;
+}
+
+#tree {
+  display: flex;  
+  position: relative;
+  justify-content: space-around;
+  width: 100%; 
+  height: auto;
+  flex-grow: 1; /* Allow the tree to expand within the parent */
+  overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.node circle {
+  fill: #999;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+.dot {
+  fill: blue;
+}
+
+.pred {
+  fill: red;
+}
+
+.line {
+  stroke: gray;
+  stroke-width: 1;
+}
+
+.active circle {
+    outline: 4px solid steelblue;
+}
